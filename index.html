@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+    <!-- ── Primary meta ── -->
+    <title>Cedar Boost | Premium Digital Recharge</title>
+    <meta name="description" content="Cedar Boost — the fastest digital assets & recharge hub. Top up wallets, boost social accounts, and manage game credits instantly." />
+    <meta name="author" content="Cedar Boost" />
+    <meta name="keywords" content="cedar boost, digital recharge, SMM panel, game top-up, wallet, Lebanon" />
+
+    <!-- ── PWA / App meta ── -->
+    <meta name="theme-color" content="#D61414" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Cedar Boost" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="Cedar Boost" />
+    <meta name="msapplication-TileColor" content="#D61414" />
+    <meta name="msapplication-TileImage" content="/assets/cedar1.png" />
+
+    <!-- ── Favicon chain ── -->
+    <!-- Primary favicon (modern browsers) -->
+    <link rel="icon" href="/assets/cedar1.png" type="image/png" sizes="512x512" />
+    <!-- PNG fallback (Safari, older browsers) -->
+    <link rel="icon" href="/assets/cedar1.png" type="image/png" sizes="512x512" />
+    <!-- Legacy .ico fallback -->
+    <link rel="shortcut icon" href="/assets/cedar1.png" />
+    <!-- Apple Touch Icon (home screen on iOS) -->
+    <link rel="apple-touch-icon" sizes="512x512" href="/assets/cedar1.png" />
+
+    <!-- ── Manifest ── -->
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- ── Open Graph (social preview) ── -->
+    <meta property="og:type"        content="website" />
+    <meta property="og:site_name"   content="Cedar Boost" />
+    <meta property="og:title"       content="Cedar Boost | Premium Digital Recharge" />
+    <meta property="og:description" content="The fastest digital assets & recharge hub — SMM, games, wallet top-ups." />
+    <meta property="og:image"       content="/assets/cedar1.png" />
+    <meta property="og:image:width" content="512" />
+    <meta property="og:image:height" content="512" />
+    <meta property="og:image:alt"   content="Cedar Boost Logo" />
+
+    <!-- ── Twitter Card ── -->
+    <meta name="twitter:card"        content="summary" />
+    <meta name="twitter:title"       content="Cedar Boost | Premium Digital Recharge" />
+    <meta name="twitter:description" content="The fastest digital assets & recharge hub." />
+    <meta name="twitter:image"       content="/assets/cedar1.png" />
+    <meta name="twitter:image:alt"   content="Cedar Boost Logo" />
+
+    <!-- ── Preconnect for fonts ── -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+
+  <body>
+    <!-- ═══════════════════════════════════════════════
+         NATIVE SPLASH SCREEN (shown before JS loads)
+         Fades out once React mounts.
+    ═══════════════════════════════════════════════ -->
+    <div id="splash-screen" class="app-splash" aria-live="polite" aria-busy="true">
+      <div class="app-splash__content">
+        <!-- Orbital rings -->
+        <div class="app-splash__orbit app-splash__orbit--outer"></div>
+        <div class="app-splash__orbit app-splash__orbit--inner"></div>
+
+        <!-- Logo mark using cedar1.png -->
+        <img
+          src="/assets/cedar1.png"
+          alt="Cedar Boost Logo"
+          class="app-splash__logo"
+          width="120"
+          height="120"
+        />
+
+        <!-- Brand name -->
+        <div class="app-splash__wordmark">
+          <span class="app-splash__name brand-header-3d-splash">CEDAR BOOST</span>
+          <span class="app-splash__tagline">PREMIUM HUB</span>
+        </div>
+
+        <!-- Loading dots -->
+        <div class="app-splash__dots">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
